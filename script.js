@@ -33,7 +33,7 @@ const lookup = {
 
 function rot13(encodedStr) {
   let decodedArr ="";
-	for(let i=0;i<encodeStr.length;i++)
+	for(let i=0;i<encodedStr.length;i++)
 		{
 			decodedArr+=lookup[encodedStr[i]];
 		}
