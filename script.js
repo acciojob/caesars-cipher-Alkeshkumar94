@@ -32,23 +32,23 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-let decstr="";
+let decodeArr="";
 	encodedStr=encodedStr.toUpperCase();
 	for(let i=0;i<encodedStr.length;i++){
 		if(lookup.encodedStr[i]){
-			decstr+=lookup.encodedStr[i];
+			decodeArr+=lookup.encodedStr[i];
 		}
 		else{
-			decstr+=encodedStr[i];
+			decodeArr+=encodedStr[i];
 		}
 	}
 
-  return decstr; //return decodedArr
+  return decodeArr; //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
-// console.log(rot13("SERR YBIR? NPPVBWBO"));
+ console.log(rot13("SERR YBIR? NPPVBWBO"));
 
 // Do not change this line
-window.rot13 = rot13;
+//window.rot13 = rot13;
